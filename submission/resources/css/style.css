@@ -1,0 +1,179 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #363232;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Styling the Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 15px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Styling Headers */
+h1 {
+    color: #222;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Styling Images */
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling Sections */
+section {
+    padding: 25px;
+    margin: 20px auto;
+    background: rgb(137, 137, 137);
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Styling for the "Project 1" link */
+.project-list .project li a {
+    font-size: 2rem; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: #002532; /* Add a color for better visibility */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.project-list .project li a:hover {
+    color: #005f73; /* Change color on hover */
+}
+
+/* Styling Buttons */
+button {
+    background-color: #008CBA;
+    color: rgb(75, 73, 73);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.intro img {
+    width: 500px; /* Set the desired width */
+    height: 500px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: bottom; /* Focuses on the bottom half of the image */
+    border-radius: 50%; /* Optional: Makes the image circular */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Styling the Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: #008CBA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #005f73;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
